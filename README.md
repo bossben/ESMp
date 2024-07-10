@@ -26,6 +26,7 @@ Save the database folders into spider_dev, spider_test, and cosql_dev, respectiv
 Then, create a conda environment:
 
 ```conda create -n "ESMp" python=3.10.0```
+
 ```conda activate ESMp```
 
 Install packages:
