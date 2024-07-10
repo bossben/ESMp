@@ -61,3 +61,16 @@ To run our script, use the following command:
 ```--verbose```: add if you want information like which rules are being applied on each comparison.
 
 Default configuration is to run ESM+ on spider's test set, with our baseline GPT4Turbo predictions.
+
+### Baseline
+We introduced two new baselines. These are stored in the baselines folder.
+
+To run, first put your LLM keys in llm.py.
+
+Then, baselines can be run using:
+
+```
+python3 spider.py
+
+python3 cosql.py
+```
