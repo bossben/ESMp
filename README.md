@@ -65,6 +65,8 @@ Default configuration is to run ESM+ on spider's test set, with our baseline GPT
 ### Baseline
 We introduced two new baselines. These are stored in the baselines folder.
 
+To begin, save the json files of spider and cosql's sets you'd like to run the baselines on. They are found in the [spider](https://drive.usercontent.google.com/download?id=1iRDVHLr4mX2wQKSgA9J8Pire73Jahh0m&export=download&authuser=0) (dev and test) and [cosql](https://drive.usercontent.google.com/download?id=1Y3ydpFiQQ3FC0bzdfy3groV95O_f1nXF&export=download&authuser=0) (only dev) datasets.
+
 To run, first put your LLM keys in llm.py.
 
 Then install requirements:
