@@ -67,10 +67,12 @@ We introduced two new baselines. These are stored in the baselines folder.
 
 To run, first put your LLM keys in llm.py.
 
+Then install requirements:
+
+```pip install -r requirements.txt```
+
 Then, baselines can be run using:
 
-```
-python3 spider.py
+```python3 spider.py```
 
-python3 cosql.py
-```
+```python3 cosql.py```
