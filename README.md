@@ -24,26 +24,40 @@ First, download the database folders for [spider](https://drive.usercontent.goog
 Save the database folders into spider_dev, spider_test, and cosql_dev, respectively.
 
 Then, create a conda environment:
+
 ```conda create -n "ESMp" python=3.10.0```
 ```conda activate ESMp```
 
 Install packages:
+
 ```pip install -r requirements.txt```
 
 To run our script, use the following command:
+
 ```python3 ESMp.py --gold path/to/gold.txt --pred path/to/pred.txt --db path/to/database/ --table path/to/tables.json```
 
 ##### Optional flags:
+
 ```--gold```: gold txt file.
+
 ```--pred```: predictions txt file.
+
 ```--db```: directory of databases.
+
 ```--table```: tables json file.
+
 ```--etype```: same as previous. Note that exe has been updated according to the paper. Default is match (ESM+).
+
 ```--plug_value```: same as previous. Note that this metric is designed for models that do predict values.
+
 ```--progress_bar_for_each_datapoint```: same as previous
+
 ```--disable_value```: add if you want to disable value checks, strongly discouraged.
+
 ```--disable_distinct```: add if you want to disable distinct checks, strongly discouraged.
+
 ```--disable_rules```: Takes a list of comma separated rules, none, or all. Rule numbers correspond to those in Table 1 of our paper. Default is none.
+
 ```--verbose```: add if you want information like which rules are being applied on each comparison.
 
 Default configuration is to run ESM+ on spider's test set, with our baseline GPT4Turbo predictions.
